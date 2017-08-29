@@ -47,3 +47,56 @@ p {
   min-height: 1px;
   margin: 0 2% 20px;
 }
+
+@media (min-width:760px) {
+  .container{
+    width:750px:
+  }
+}
+
+@media (min-width:992px) {
+  .container{
+    width:970px:
+  }
+  .one-half {
+    width:46%;
+  }
+  .one-third {
+    width: 29.33333%;
+  }
+  .one-fourth {
+    width: 21%;
+  }
+}
+
+@@media (min-width:1200px) {
+  .container{
+    width: 1170px;
+  }
+}
+
+
+/* Header */
+header {
+  color: #ffffff;
+  /* hero bg: */
+  background-image: linear-gradient(-48deg, #076970 45%, #71CEC8 100%);
+}
+
+header nav {
+  padding: 1em 0;
+  background-color: white;
+}
+
+header nav ul {
+  display: inline;
+  text-align: right;
+  float: right;
+  margin: 0;
+}
+
+header nav ul > li {
+  list-style-type: none;
+  display: inline-block;
+  margin:0 15px;
+ }
