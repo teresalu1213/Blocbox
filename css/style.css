@@ -80,8 +80,8 @@ p {
 header {
   color: #ffffff;
   /* hero bg: */
-  background-image: linear-gradient(-48deg, #076970 45%, #71CEC8 100%);
-}
+  background-image: linear-gradient(42deg, #076970 45%, #71CEC8 100%);
+} /*how do I calculate degrees? */
 
 header nav {
   padding: 1em 0;
@@ -95,8 +95,55 @@ header nav ul {
   margin: 0;
 }
 
-header nav ul > li {
-  list-style-type: none;
+header nav ul > li { /* < means a child element */
+  list-style-type: none; /*removes bullet*/
   display: inline-block;
   margin:0 15px;
+
+ }
+
+ header nav ul > li.btn-signup {
+  padding:10px 15px;
+  background: #FFA745;
+  border-radius: 4px;
+ }
+
+header nav ul > li > a {
+  color: #002d0a;
+  text-decoration: none; /*gets rid of hyperlink underline*/
+}
+
+header nav ul > li.btn-signup > a {
+  color: #ffffff;
+}
+
+header .hero {
+  text-align: left;
+  display:block;
+  position: relative;
+ }
+ header .hero h1 {
+  font-size:48px;
+  font-weight: normal;
+  margin:95px 0 0;
+ }
+ header .hero p {
+   font-size: 22px;
+   line-height: 27px;
+   font-weight: 100;
+   margin:10px 0 40px;
+ }
+ header .hero img {
+   display: block;
+   margin:3em auto 0;
+ }
+
+/*buttons*/
+.btn {
+  border-radius: 4px;
+  color:#FFFFFF;
+  font-weight: 700;
+  text-decoration: none;
+  padding:10px 30px;
+  background: #FFA745;
  }
