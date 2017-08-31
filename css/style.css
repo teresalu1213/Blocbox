@@ -6,7 +6,7 @@ body{
   color: #333333;
 }
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Poppin', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 h2 {
@@ -69,7 +69,7 @@ p {
   }
 }
 
-@@media (min-width:1200px) {
+@media (min-width:1200px) {
   .container{
     width: 1170px;
   }
@@ -121,28 +121,31 @@ header .hero {
   text-align: left;
   display:block;
   position: relative;
+  padding: 4em 0;
  }
  header .hero h1 {
-  font-size:48px;
+  font-size:44px;
   font-weight: normal;
-  margin:95px 0 0;
+  margin:45px 0 0;
  }
  header .hero p {
    font-size: 22px;
    line-height: 27px;
-   font-weight: 100;
+   font-weight: lighter;
    margin:10px 0 40px;
  }
  header .hero img {
    display: block;
    margin:3em auto 0;
+   max-width: 100%;
+   height: auto;
  }
 
 /*buttons*/
 .btn {
   border-radius: 4px;
   color:#FFFFFF;
-  font-weight: 700;
+  font-weight: normal;
   text-decoration: none;
   padding:10px 30px;
   background: #FFA745;
@@ -182,8 +185,8 @@ header .hero {
   }
 
 .box h3 {
-    font-family: "Lato", Helvetica, Arial, sans-serif;
-    font-weight: 600;
+    font-family: "Poppins", Helvetica, Arial, sans-serif;
+    font-weight: 100;
     text-transform: uppercase;
     color: #ffffff;
     background: #067970;
@@ -195,3 +198,60 @@ header .hero {
     margin:0 -15px 40px;
     padding:10px 0;
   }
+
+.box h4 {
+   font-size:50px;
+   font-weight: normal;
+   margin:40px 0 10px;
+   color:#2B9F95;
+ }
+
+ .box h4 span {
+   font-size:32px;
+   vertical-align: top;
+ }
+
+ .box h4 span.month {
+   font-family: "Open Sans", Helvetica, Arial, sans-serif;
+   font-weight: 100;
+   color:#888888;
+   font-size:20px;
+   vertical-align: middle;
+ }
+
+ .box ul li {
+   font-size:18px;
+   margin-bottom:20px;
+   font-weight: 100;
+ }
+
+
+/* BENEFITS */
+.benefits {
+  background-image: linear-gradient(42deg, #076970 45%, #71CEC8 100%);
+  color: #fff;
+  padding: 2em 0;
+}
+.benefits ul {
+  list-style-type: none;
+}
+.benefits ul li {
+  list-style-type: none;
+  display: block;
+  float: left;
+  margin: 4em 0;
+}
+.benefits ul li img {
+  max-width: 100%;
+  height: auto;
+}
+.benefits ul li h2 {
+  margin-top: 1.5em;
+}
+.benefits ul li a {
+  display: inline-block;
+  margin-top: 0.5em;
+}
+.benefits .benefits-text {
+  padding: 0 4em;
+}
