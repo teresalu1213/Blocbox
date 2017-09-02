@@ -5,8 +5,16 @@ body{
   font-family: 'Open Sans', sans-serif;
   color: #333333;
 }
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h6 {
   font-family: 'Poppins', sans-serif;
+}
+
+h5{
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-size: 12px;
+  font-weight: 100;
+
 }
 
 h2 {
@@ -17,7 +25,7 @@ h2 {
 
 p {
   font-size: 16px;
-  line-height:19px;
+  line-height:21px;
   font-weight: 100;
 }
 
@@ -95,18 +103,17 @@ header nav ul {
   margin: 0;
 }
 
-header nav ul > li { /* < means a child element */
+header nav ul > li { /* > means a child element */
   list-style-type: none; /*removes bullet*/
   display: inline-block;
   margin:0 15px;
-
- }
+}
 
  header nav ul > li.btn-signup {
   padding:10px 15px;
   background: #FFA745;
   border-radius: 4px;
- }
+}
 
 header nav ul > li > a {
   color: #002d0a;
@@ -122,24 +129,27 @@ header .hero {
   display:block;
   position: relative;
   padding: 4em 0;
- }
- header .hero h1 {
+}
+
+header .hero h1 {
   font-size:44px;
   font-weight: normal;
   margin:45px 0 0;
- }
- header .hero p {
+}
+
+header .hero p {
    font-size: 22px;
    line-height: 27px;
    font-weight: lighter;
    margin:10px 0 40px;
- }
- header .hero img {
+}
+
+header .hero img {
    display: block;
    margin:3em auto 0;
    max-width: 100%;
    height: auto;
- }
+}
 
 /*buttons*/
 .btn {
@@ -157,8 +167,14 @@ header .hero {
   padding:4em 0;
 }
 
-.pricing h2, .pricing p {
+.pricing h2{
+  color: #067970;
+  font-weight: 300;
+}
+.pricing p {
    color:#333333;
+   margin-top: 25px;
+   margin-bottom: 60px;
  }
 
 .pricing ul {
@@ -185,7 +201,8 @@ header .hero {
   }
 
 .box h3 {
-    font-family: "Poppins", Helvetica, Arial, sans-serif;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.5px;
     font-weight: 100;
     text-transform: uppercase;
     color: #ffffff;
@@ -196,7 +213,7 @@ header .hero {
     top:0;
     text-align: center;
     margin:0 -15px 40px;
-    padding:10px 0;
+    padding:15px 0;
   }
 
 .box h4 {
@@ -224,6 +241,13 @@ header .hero {
    margin-bottom:20px;
    font-weight: 100;
  }
+
+.box .btn {
+  position: absolute;
+  bottom: 40px;
+  left: 45px;
+  right: 45px;
+}
 
 
 /* BENEFITS */
@@ -254,4 +278,23 @@ header .hero {
 }
 .benefits .benefits-text {
   padding: 0 4em;
+}
+
+
+
+
+/*testimonial*/
+.testimonials {
+  background: url("../images/testimonial-bg.png") top center no-repeat;
+  background-size: cover;
+  padding: 4em 0;
+  text-align: center;
+}
+
+.testimonials h2 {
+  color: #067970;
+}
+
+.testimonials ul li {
+  list-style-type: none;
 }
