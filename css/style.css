@@ -62,11 +62,7 @@ p {
   }
 }
 
-@@media (min-width:760px) {
-  .container{
-    width: 760px;
-  }
-}
+
 
 @media (min-width:992px) {
   .container{
@@ -353,6 +349,23 @@ header .hero img {
 
 .staggered {
   margin-top: 20px;
+}
+
+/*Call to Action*/
+.call-to-action {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.call-to-action h1{
+  font-weight: normal;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.call-to-action a{
+  padding-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 /* FOOTER */
