@@ -298,3 +298,53 @@ header .hero img {
 .testimonials ul li {
   list-style-type: none;
 }
+
+.testimonials blockquote {
+  color: #fff;
+  text-align: left;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: normal;
+  background: #2b9f95;
+  position: relative;
+  padding: 30px;
+  width: auto;
+  margin:0;
+}
+
+/*magically adds the triangle underneath the blockquote bubble. */
+.testimonials blockquote:after { /*psudo class*/
+  top: 100%; /*edge position */
+  left: 13%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none; /* why do i need this?*/
+  border-top-color: #2b9f95;
+  border-width: 10px;
+  margin-left: -10px;
+}
+
+.testimonials img {
+  height: 65px;
+  width: 65px;
+  border-radius:50%;
+  float: left;
+  display: inline-block; /* This should put image and text next to each other, but what if textblock is wider than the blockquote box? text block is pushed to a new line. Halp?!*/
+  margin:20px 10px 0 0;
+}
+
+.testimonials p.name {
+  float: left;
+  display: inline-block;
+  text-align: left;
+  font-size:13px;
+  margin-top: 30px;
+}
+
+.staggered {
+  margin-top: 20px;
+}

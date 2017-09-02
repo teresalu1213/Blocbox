@@ -1,2 +1,2 @@
-# Version control using Github
+# Learning Version control using Github
 **Teresa Lu**
