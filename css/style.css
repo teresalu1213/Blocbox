@@ -39,7 +39,7 @@ p {
 }
 
 .container:before,
-.container:after {
+.container:after { /*Psudo class*/
   content: " ";
   display: table;
 }
@@ -49,22 +49,28 @@ p {
 }
 
 .one-half, .one-third, .one-fourth {
-  width: 96%;
+  width: 96%; /*2% margin each side*/
   float: left;
   position: relative;
   min-height: 1px;
   margin: 0 2% 20px;
 }
 
-@media (min-width:760px) {
+@media (min-width:375px) {
   .container{
-    width:750px:
+    width:375px;
+  }
+}
+
+@@media (min-width:760px) {
+  .container{
+    width: 760px;
   }
 }
 
 @media (min-width:992px) {
   .container{
-    width:970px:
+    width:970px;
   }
   .one-half {
     width:46%;
@@ -348,3 +354,54 @@ header .hero img {
 .staggered {
   margin-top: 20px;
 }
+
+/* FOOTER */
+footer {
+  background-color: #076970;
+  background-image: linear-gradient(42deg, #076970 45%, #71CEC8 100%);
+  color: #FFFFFF;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+footer p, footer nav ul {
+  font-size:14px;
+  font-weight:100;
+  text-align: center;
+  margin: 10px auto 0;
+}
+footer nav ul li {
+  list-style-type: none;
+  display: inline;
+}
+footer nav ul li a {
+  color:#FFFFFF;
+  text-decoration: none;
+}
+footer .right-footer-block {
+  background-color: transparent;
+}
+footer .logo{
+  padding: 2.35em 0;
+  margin: 0 auto;
+  display: block;
+}
+
+@media (min-width: 991px) {
+  footer{
+   background-color: #076970;
+   background-image: linear-gradient(to left, 42deg, #076970 45%, #71CEC8 100%);
+   height: 100px;
+  }
+  footer p, footer nav ul{
+   padding: 2em 0;
+   text-align: left;
+  }
+  footer .right-footer-block {
+   background-color: #2b9f95;
+  }
+  footer .logo{
+   padding: 2em 0 2em 1.5em;
+  }
+   }
