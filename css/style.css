@@ -58,11 +58,11 @@ p {
 
 @media (min-width:320px) {
   .container {
-    width:600px;
+    width:90%;
   }
 }
 
-@@media (min-width:768px) {
+@media (min-width:768px) {
   .container {
     width:760px;
   }
@@ -320,7 +320,7 @@ header .hero img {
 }
 
 /*magically adds the triangle underneath the blockquote bubble. */
-.testimonials blockquote:after { /*psudo class*/
+.testimonials blockquote:after { /*pseudo class*/
   top: 100%; /*edge position */
   left: 13%;
   border: solid transparent;
@@ -375,8 +375,8 @@ header .hero img {
 /* FOOTER */
 footer {
   background-color: #076970;
-  /*background-image: linear-gradient(to top,
-     #2b9f95 0%, #2b9f95 50%, #076970 50%, #076970 100%);*/
+  background-image: linear-gradient(to top,
+     #2b9f95 0%, #2b9f95 50%, #076970 50%, #076970 100%);
   color: #FFFFFF;
   height: 150px;
   position: relative;
@@ -409,14 +409,15 @@ footer .logo{
 @media (min-width:320px){
   footer{
     background-color: #076970;
+    background-image:none;
     height: auto;
   }
   footer p{
     padding-top: 2em;
   }
 
-  }
 }
+
 
 
 
