@@ -58,7 +58,7 @@ p {
 
 @media (min-width:320px) {
   .container {
-    width:375px;
+    width:600px;
   }
 }
 
@@ -375,7 +375,8 @@ header .hero img {
 /* FOOTER */
 footer {
   background-color: #076970;
-
+  /*background-image: linear-gradient(to top,
+     #2b9f95 0%, #2b9f95 50%, #076970 50%, #076970 100%);*/
   color: #FFFFFF;
   height: 150px;
   position: relative;
@@ -408,6 +409,12 @@ footer .logo{
 @media (min-width:320px){
   footer{
     background-color: #076970;
+    height: auto;
+  }
+  footer p{
+    padding-top: 2em;
+  }
+
   }
 }
 
