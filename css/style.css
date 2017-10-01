@@ -490,14 +490,16 @@ footer .logo {
   padding:20px 0;
   display: block;
   text-align: center;
+  background: #067970;
 }
 
-.site-logo {
-  background: #067970;   /* doesn't work. Why?? */
-}
-
-.left-nav .items {
+.left-nav .items p,li{
   padding: 0 6%;
+}
+
+.left-nav .items .active {
+  background: #71cec8;
+
 }
 
 .left-nav .items p {
@@ -506,6 +508,7 @@ footer .logo {
   font-size: 12px;
   color: #e2e2e2;
   line-height: 15px;
+
 }
 
 .left-nav .items ul {
@@ -529,6 +532,8 @@ footer .logo {
   text-align: center;
   margin-right: 8px;
 }
+
+
 
 /* LEFT NAVBAR SETTINGS */
 .left-nav .settings {
