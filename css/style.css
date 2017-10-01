@@ -471,10 +471,10 @@ footer .logo {
 }
 
 
-
-/*Dashboard*/
+/*=============================*/
+/*DASHBOARD*/
 .dashboard {
-  background: #f7f7f7;
+  background: #fff;
 }
 .left-nav {
   height: 100vh;
@@ -487,10 +487,14 @@ footer .logo {
 }
 
 .left-nav .site-logo {
-  padding:20px 0;
+  padding:15px 0;
   display: block;
   text-align: center;
   background: #067970;
+}
+
+.logo-resize {
+  width: 50%;
 }
 
 .left-nav .items p,li{
@@ -499,6 +503,12 @@ footer .logo {
 
 .left-nav .items .active {
   background: #71cec8;
+  /* The line height changes when I click on a different item.I must have got the margin and paddings wrong.*/
+  padding-top:10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
 
 }
 
@@ -518,7 +528,7 @@ footer .logo {
 
 .left-nav .items ul li {
   list-style-type: none;
-  margin-bottom: 15px;
+  margin:15px 0;
 }
 
 .left-nav .items ul li a {
@@ -543,7 +553,7 @@ footer .logo {
   bottom:0;
   left:0;
   right:0;
-  padding:10px 0;
+  padding:5px 0;
 }
 .left-nav .settings img {
   height:35px;
@@ -556,7 +566,6 @@ footer .logo {
   display: inline-block;
   vertical-align: top;
   padding-top: 8px;
-  font-weight: 400;
   margin:0 0 0 10px;
 }
 .left-nav .settings a {
@@ -607,7 +616,7 @@ footer .logo {
   display:block;
   height:230px;
   background: #FFFFFF;
-  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.40);
+  border: 1px solid #d3d3d3;
   position: relative;
   overflow: hidden;
   padding:20px;
