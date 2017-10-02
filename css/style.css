@@ -476,15 +476,80 @@ footer .logo {
 .dashboard {
   background: #fff;
 }
-.left-nav {
-  height: 100vh;
-  width: 14.66666667%;
-  color: #ffffff;
+
+.left-nav{
+  height: 100%;
+  width: 280px;
+  color: #fff;
   background: #2B9F95;
   float: left;
-  position:fixed;
-  display:block;
+  position: absolute;
+  -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+   transform: translate(-280px,0);
+     -webkit-transform: translate(-280px,0); /** Chrome & Safari **/
+     -o-transform: translate(-280px,0); /** Opera **/
+     -moz-transform: translate(-280px,0); /** Firefox **/
 }
+
+.left-nav.open {
+  display:block;
+  width:280px;
+  background: #2B9F95;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transform: translate(0,0);
+   -webkit-transform: translate(0,0); /** Chrome & Safari **/
+   -o-transform: translate(0,0); /** Opera **/
+   -moz-transform: translate(0,0); /** Firefox **/
+   z-index: 100;
+ }
+
+ .hamburger {
+  position:absolute;
+  z-index: 1000;
+  background:#2B9F95;
+  color:#FFF;
+  text-decoration: none;
+  font-size: 22px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  left: 5px;
+  top: 15px;
+ }
+
+@media (min-width:992px){
+  .left-nav {
+    height: 100vh;
+    width: 14.66666667%;
+    color: #ffffff;
+    background: #2B9F95;
+    float: left;
+    position:fixed;
+    display:block;
+    transform: translate(0,0);
+     -webkit-transform: translate(0,0); /** Chrome & Safari **/
+     -o-transform: translate(0,0); /** Opera **/
+     -moz-transform: translate(0,0); /** Firefox **/
+  }
+  .left-nav.open {
+    width:14.66666667%;
+    transform: translate(0,0);
+    -webkit-transform: translate(0,0); /** Chrome & Safari **/
+    -o-transform: translate(0,0); /** Opera **/
+    -moz-transform: translate(0,0); /** Firefox **/
+  }
+  .hamburger {
+    display:none;
+  }
+}
+
+
+
 
 .left-nav .site-logo {
   padding:15px 0;
