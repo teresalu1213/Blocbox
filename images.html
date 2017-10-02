@@ -20,6 +20,8 @@
 </head>
 
 <body class="images">
+  <!--Responsive NAV -->
+  <a href="#" class="hamburger" id="menu">&#9776;</a>
   <!--LEFT NAV -->
   <nav id="left-nav" class="left-nav">
     <a href="#" class="site-logo"><img src="images/logo-white.png" class="logo-resize"></a>
@@ -128,7 +130,9 @@
   <script src="js/dropit.js"></script>
   <script type="text/javascript">
    $(".menu").dropit();
+   $("#menu").click(function() {
+    $("#left-nav").toggleClass("open",200);
+  });
   </script>
-
 </body>
 </html>
