@@ -562,19 +562,15 @@ footer .logo {
   width: 50%;
 }
 
-.left-nav .items p,li{
-  padding: 0 6%;
+.left-nav .items p{
+  padding: 5px 6%;
 }
 
 .left-nav .items .active {
   background: #71cec8;
   /* The line height changes when I click on a different item.I must have got the margin and paddings wrong.*/
-  padding-top:10px;
-  padding-bottom: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-
-
+  /*margin-top: 10px;
+  margin-bottom: 10px;*/
 }
 
 .left-nav .items p {
@@ -593,7 +589,8 @@ footer .logo {
 
 .left-nav .items ul li {
   list-style-type: none;
-  margin:15px 0;
+  margin:0;
+  padding: 15px 6%;
 }
 
 .left-nav .items ul li a {
